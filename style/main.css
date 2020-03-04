@@ -19,6 +19,8 @@ ul {
     top: 0;
     margin: S 8px;
     font-weight: 500;
+    font-size: 0.83em;
+    margin: 1.67em 0;
 }
 
 li {
