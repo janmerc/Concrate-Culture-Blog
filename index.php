@@ -47,5 +47,9 @@ foreach ($prispevky as $prispevek) {
 
 
     </div>
+    <footer>
+        <p>&copy; 2015 </p>
+    </footer>
 </body>
+
 </html>
