@@ -8,3 +8,24 @@ $dotaz->execute([$loggedId]);
 $prispevky = $dotaz->fetchAll();
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="wrapper">
+        <section id="navbar">
+            <h1>Concrate Culture</h1>
+            <hr />
+            <ul>
+                <li><a href="#home">BETON</a></li>
+                <li><a href="#news">SUBWAY RIDERS</a></li>
+                <li><a href="#contact">TELECOM</a></li>
+                <li><a href="#about">blbos</a></li>
+              </ul>
+        </section>
+<?php 
