@@ -17,3 +17,5 @@ $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 $spojeni = new PDO("mysql:dbname=" . DATABAZENAME . ";host=" . SERVER, USERNAME, PASSWORD);
 $dotaz = $spojeni->prepare("INSERT INTO user(`name`, email, `password`) VALUES(?, ?, ?)");
 $dotaz->execute([$username, $email, $passwordHash]);
+
+header("Location: /");
