@@ -1,5 +1,5 @@
 <?php
 const SERVER="localhost";
-const DATABAZENAME="blog";
-const USERNAME="root";
-const PASSWORD=""; 
+const DATABAZENAME="6ep_merc";
+const USERNAME="merc";
+const PASSWORD="AS2048"; 
