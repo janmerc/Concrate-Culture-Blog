@@ -21,10 +21,10 @@ $prispevky = $dotaz->fetchAll();
             <h1>Concrate Culture</h1>
             <hr />
             <ul>
-                <li><a href="#home">BETON</a></li>
-                <li><a href="#news">SUBWAY RIDERS</a></li>
-                <li><a href="#contact">TELECOM</a></li>
-                <li><a href="#about">blbos</a></li>
+                <li><a href="#BETON">BETON</a></li>
+                <li><a href="#SUBWAY RIDERS">SUBWAY RIDERS</a></li>
+                <li><a href="#TELECOM">TELECOM</a></li>
+                <li><a href="#blbos">blbos</a></li>
               </ul>
         </section>
 <?php 
@@ -35,6 +35,7 @@ foreach ($prispevky as $prispevek) {
     $title = $prispevek["title"];
     $content = $prispevek["content"];
 
+    $content = substr($content , 0, min(strlen($content), 50));
 
     echo('<a href="detail.php?id=' . $id . '"><h1>' . $title . '</h1></a>');
     echo("<p>$content</p>");
