@@ -31,7 +31,7 @@ $prispevky = $dotaz->fetchAll();
 <?php 
 
 foreach ($prispevky as $prispevek) {
-    echo('<div class="post">');
+    echo('<div id="post">');
     $id = $prispevek["ID"];
     $title = $prispevek["title"];
     $content = $prispevek["content"];
