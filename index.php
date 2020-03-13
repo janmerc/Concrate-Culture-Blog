@@ -29,3 +29,18 @@ $prispevky = $dotaz->fetchAll();
               </ul>
         </section>
 <?php 
+
+foreach ($prispevky as $prispevek) {
+    echo('<div class="post">');
+    $id = $prispevek["ID"];
+    $title = $prispevek["title"];
+    $content = $prispevek["content"];
+
+
+
+?>
+
+
+    </div>
+</body>
+</html>
