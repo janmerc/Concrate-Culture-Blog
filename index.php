@@ -8,7 +8,6 @@ $dotaz->execute([$loggedId]);
 $prispevky = $dotaz->fetchAll();
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +36,10 @@ foreach ($prispevky as $prispevek) {
     $content = $prispevek["content"];
 
 
+    echo('<a href="detail.php?id=' . $id . '"><h1>' . $title . '</h1></a>');
+    echo("<p>$content</p>");
+    echo("</div>");
+}
 
 ?>
 
