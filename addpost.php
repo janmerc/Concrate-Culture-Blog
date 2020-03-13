@@ -9,3 +9,4 @@ $spojeni = new PDO("mysql:dbname=" . DATABAZENAME . ";host=" . SERVER, USERNAME,
 $dotaz = $spojeni->prepare("INSERT INTO post(title, content, autorId) VALUE(?, ?, ?)");
 $dotaz->execute([$title, $content, $loggedId]);
 
+header("Location: /");
