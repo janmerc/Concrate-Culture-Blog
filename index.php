@@ -26,7 +26,7 @@ $prispevky = $dotaz->fetchAll();
                 <li><a href="#SUBWAY RIDERS">SUBWAY RIDERS</a></li>
                 <li><a href="#TELECOM">TELECOM</a></li>
                 <li><a href="#blbos">blbos</a></li>
-              </ul>
+            </ul>
         </section>
 <?php 
 

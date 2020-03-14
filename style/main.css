@@ -10,9 +10,6 @@
     padding: 1em;
 }
 
-#post {
-    
-}
 
 
 #post, footer {
@@ -25,6 +22,10 @@ footer {
     background-color: white;
     color: black;
     margin-top: 1em;
+}
+
+#footerodsazeni{
+    margin-top: 20%;
 }
 
 
@@ -64,6 +65,12 @@ a {
     text-decoration: none;
 }
 
+#myHeader{
+    font-size: 3em;
+    margin: 0.67em 0;
+    text-align: center;
+}
+
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
@@ -94,6 +101,36 @@ h6 {
     margin: 2.33em 0;
 }
 
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+
+input[type="text"], [type="password"], [type="submit"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-top: 5%;
+    display: inline-block;
+    border: 1px solid;
+    background-color: white;
+    border-color: black;
+    box-sizing: border-box;
+}
+
+#prihlaseniregistrace {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid;
+    background-color: white;
+    border-color: black;
+    box-sizing: border-box;
+}
+
 #h1title{
     color: red;
 }
+
