@@ -31,9 +31,11 @@ $dotaz->execute([$id]);
 $post = $dotaz->fetch();
 
 $title = $post["title"];
+$datetime = $datetime["datetime"];
 $content = $post["content"];
 echo('<div id="post">');
 echo("<h1>$title</h1>");
+echo("<p>$datetime</p>");
 echo("<p>$content</p>");
 echo("</div>");
 ?>

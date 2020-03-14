@@ -34,11 +34,13 @@ foreach ($prispevky as $prispevek) {
     echo('<div id="post">');
     $id = $prispevek["ID"];
     $title = $prispevek["title"];
+    $datetime =$datetime["datetime"];
     $content = $prispevek["content"];
 
     $content = substr($content , 0, min(strlen($content), 50));
 
     echo('<a href="detail.php?id=' . $id . '"><h1 id="h1title">' . $title . '</h1></a>');
+    echo("<p>$datetime</p>");
     echo("<p>$content</p>");
     echo("</div>");
 }
