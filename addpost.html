@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css" /> 
+    <script src="https://cdn.tiny.cloud/1/6puhx6bj1a1xdpenabod27vjypjqpbtnmwuztjnbx73a66gb/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+        tinymce.init({
+          selector: '#mytextarea'
+        });
+      </script>
+
     <title>Concrate Culture</title>
 </head>
 </head>
@@ -23,7 +31,7 @@
     </header>
     <form action="addpost.php" method="POST">
         <input type="text" name="title">
-        <input type="text" name="content">
+        <input id="mytextarea" type="text" name="content">
         <input type="submit" >
     </form>
     </div>
