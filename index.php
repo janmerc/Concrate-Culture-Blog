@@ -38,7 +38,7 @@ foreach ($prispevky as $prispevek) {
 
     $content = substr($content , 0, min(strlen($content), 50));
 
-    echo('<a href="detail.php?id=' . $id . '"><h1>' . $title . '</h1></a>');
+    echo('<a href="detail.php?id=' . $id . '"><h1 id="h1title">' . $title . '</h1></a>');
     echo("<p>$content</p>");
     echo("</div>");
 }
