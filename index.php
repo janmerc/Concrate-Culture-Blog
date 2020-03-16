@@ -15,19 +15,27 @@ $prispevky = $dotaz->fetchAll();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css" /> 
     <title>Concrate Culture</title>
+        
 </head>
 <body>
 <div id="wrapper">
-        <section id="navbar">
-            <h1>Concrate Culture</h1>
-            <hr />
-            <ul>
-                <li><a href="#BETON">BETON</a></li>
-                <li><a href="#SUBWAY RIDERS">SUBWAY RIDERS</a></li>
-                <li><a href="#TELECOM">TELECOM</a></li>
-                <li><a href="#blbos">blbos</a></li>
-            </ul>
-        </section>
+    <section id="navbar">
+    <h1 id="concrateculture">Concrate Culture</h1>
+    <div id="uzivatelskypanel">
+        <ul id="mainList">
+            <li>přihlásit</li>
+            <li>registrace/</li>
+            <li>přidat poznámku/</li>
+        </ul>
+    </div>
+    <hr>
+    <ul>
+        <li><a href="#BETON">BETON</a></li>
+        <li><a href="#SUBWAY RIDERS">SUBWAY RIDERS</a></li>
+        <li><a href="#TELECOM">TELECOM</a></li>
+        <li><a href="#blbos">blbos</a></li>
+        </ul>
+    </section>
 <?php 
 
 foreach ($prispevky as $prispevek) {
@@ -37,7 +45,7 @@ foreach ($prispevky as $prispevek) {
     $datetime =$datetime["datetime"];
     $content = $prispevek["content"];
 
-    $content = substr($content , 0, min(strlen($content), 50));
+    $content = substr($content , 0, min(strlen($content), 300));
 
     echo('<a href="detail.php?id=' . $id . '"><h1 id="h1title">' . $title . '</h1></a>');
     echo("<p>$datetime</p>");
@@ -48,7 +56,7 @@ foreach ($prispevky as $prispevek) {
 ?>
 
 
-    </div>
+    </div>  
     <footer>
         <p>&copy; 2015 </p>
     </footer>
