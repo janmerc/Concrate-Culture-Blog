@@ -23,9 +23,9 @@ $prispevky = $dotaz->fetchAll();
     <h1 id="concrateculture">Concrate Culture</h1>
     <div id="uzivatelskypanel">
         <ul id="mainList">
-            <li>přihlásit</li>
-            <li>registrace/</li>
-            <li>přidat poznámku/</li>
+            <li><a href="prihlaseni.html">přihlášení/</a></li>
+            <li><a href="registrace.html">registrace/</a></li>
+            <li><a href="addpost.html">přidat poznámku/</a></li>
         </ul>
     </div>
     <hr>
@@ -57,8 +57,8 @@ foreach ($prispevky as $prispevek) {
 
 
     </div>  
-    <footer>
-        <p>&copy; 2015 </p>
+    <footer id="footerodsazeni">
+        <p>&copy; 2020 </p>
     </footer>
 </body>
 

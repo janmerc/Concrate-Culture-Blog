@@ -8,16 +8,23 @@
 </head>
 <body>
 <div id="wrapper">
-        <section id="navbar">
-            <h1><a href="index.php">Concrate Culture</a></h1>
-            <hr />
-            <ul>
-                <li><a href="#BETON">BETON</a></li>
-                <li><a href="#SUBWAY RIDERS">SUBWAY RIDERS</a></li>
-                <li><a href="#TELECOM">TELECOM</a></li>
-                <li><a href="#blbos">blbos</a></li>
-              </ul>
-        </section>
+    <section id="navbar">
+    <h1 id="concrateculture">Concrate Culture</h1>
+    <div id="uzivatelskypanel">
+        <ul id="mainList">
+            <li><a href="prihlaseni.html">přihlášení/</a></li>
+            <li><a href="registrace.html">registrace/</a></li>
+            <li><a href="addpost.html">přidat poznámku/</a></li>
+        </ul>
+    </div>
+    <hr>
+    <ul>
+        <li><a href="#BETON">BETON</a></li>
+        <li><a href="#SUBWAY RIDERS">SUBWAY RIDERS</a></li>
+        <li><a href="#TELECOM">TELECOM</a></li>
+        <li><a href="#blbos">blbos</a></li>
+        </ul>
+    </section>
 
 
 <?php
