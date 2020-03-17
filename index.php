@@ -42,7 +42,7 @@ foreach ($prispevky as $prispevek) {
     echo('<div id="post">');
     $id = $prispevek["ID"];
     $title = $prispevek["title"];
-    $datetime =$datetime["datetime"];
+    $datetime =$prispevek["datetime"];
     $content = $prispevek["content"];
 
     $content = substr($content , 0, min(strlen($content), 300));

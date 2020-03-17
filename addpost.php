@@ -2,7 +2,7 @@
 require "config.php";
 session_start();
 $title = $_POST["title"];
-$datetime = $_POST["datetime"];
+$datetime = (new DateTime())->format('Y-m-d H:i:s');
 $content = $_POST["content"];
 $loggedId = $_SESSION["userId"];
 

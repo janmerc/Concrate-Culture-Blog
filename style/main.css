@@ -155,3 +155,6 @@ input form [type="text"], [type="email"], [type="password"], [type="submit"]{
     color: red;
 }
 
+#mytextarea{
+    height: 300;
+}
