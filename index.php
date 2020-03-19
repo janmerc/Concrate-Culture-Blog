@@ -1,6 +1,7 @@
 <?php
 require "config.php";
 session_start();
+if( isset($_SESSION["userId"]) )
 $loggedId = $_SESSION["userId"];
 $spojeni = new PDO("mysql:dbname=" . DATABAZENAME . ";host=" . SERVER, USERNAME, PASSWORD);
 $dotaz = $spojeni->prepare("SELECT * FROM post WHERE autorId = ?");
@@ -45,21 +46,20 @@ foreach ($prispevky as $prispevek) {
     $datetime =$prispevek["datetime"];
     $content = $prispevek["content"];
 
-    $content = substr($content , 0, min(strlen($content), 300));
+    $content = substr($content , 0, min(strlen($content), 700));
 
     echo('<a href="detail.php?id=' . $id . '"><h1 id="h1title">' . $title . '</h1></a>');
-    echo("<p>$datetime</p>");
+    echo("<p st>přidáno - $datetime</p>");
+    echo("<p></p>");
     echo("<p>$content</p>");
+    echo('<a href="detail.php?id=' . $id . '"><p id="readmore">čti více !</p></a>');
     echo("</div>");
 }
 
 ?>
 
 
-    </div>  
-    <footer id="footerodsazeni">
-        <p>&copy; 2020 </p>
-    </footer>
+    </div>
 </body>
 
 </html>

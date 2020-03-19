@@ -29,9 +29,7 @@ footer {
 
 html,
 button,
-input,
-select,
-textarea {
+select {
     font-family: sans-serif;
 }
 
@@ -127,8 +125,19 @@ form {
     margin-top: 0em;
 }
 
+input [type="hidden"],[type="email"], [type="password"], [type="submit"] { 
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-top: 5%;
+    display: inline-block;
+    border: 1px solid;
+    background-color: white;
+    border-color: black;
+    box-sizing: border-box;
+}
 
-input form [type="text"], [type="email"], [type="password"], [type="submit"]{ 
+input[type="text"] { 
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -155,6 +164,18 @@ input form [type="text"], [type="email"], [type="password"], [type="submit"]{
     color: red;
 }
 
-#mytextarea{
-    height: 300;
+#readmore{
+    color: red;
 }
+
+p {
+	color: #555555;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+p,
+pre {
+    margin: 1em 0;
+}
+
