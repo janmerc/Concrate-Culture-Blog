@@ -21,7 +21,7 @@ $prispevky = $dotaz->fetchAll();
 <body>
 <div id="wrapper">
     <section id="navbar">
-    <h1 id="concrateculture">Concrate Culture</h1>
+    <h1 id="concrateculture">Poznámkovač</h1>
     <div id="uzivatelskypanel">
         <ul id="mainList">
             <li><a href="prihlaseni.html">přihlášení/</a></li>
