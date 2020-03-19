@@ -14,7 +14,7 @@
         <ul id="mainList">
             <li><a href="prihlaseni.html">přihlášení/</a></li>
             <li><a href="registrace.html">registrace/</a></li>
-            <li><a href="addpost.html">přidat poznámku/</a></li>
+            <li><a href="index.php.">hlavní strana/</a></li>
         </ul>
     </div>
     <hr>
@@ -38,7 +38,7 @@ $dotaz->execute([$id]);
 $post = $dotaz->fetch();
 
 $title = $post["title"];
-$datetime = $datetime["datetime"];
+$datetime =$post["datetime"];
 $content = $post["content"];
 echo('<div id="post">');
 echo("<h1>$title</h1>");
